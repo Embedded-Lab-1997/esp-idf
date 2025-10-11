@@ -7,7 +7,13 @@
    CONDITIONS OF ANY KIND, either express or implied.
 */
 #include <string.h>
-#include "freertos/FreeRTOS.h"
+// Budo added
+
+//#include "freertos/FreeRTOS.h" //this was before and it is empty
+#include "./components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h"
+//#include "./components/freertos/FreeRTOS-Kernel-SMP/include/freertos/FreeRTOS.h"
+//#include "./examples/build_system/cmake/idf_as_lib/stubs/freertos/freertos/FreeRTOS.h" //this is empty
+
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
 #include "esp_system.h"
@@ -15,6 +21,8 @@
 #include "esp_event.h"
 #include "esp_log.h"
 #include "nvs_flash.h"
+#include "./components/esp_common/include/esp_bit_defs.h"
+
 
 #include "lwip/err.h"
 #include "lwip/sys.h"
@@ -24,9 +32,9 @@
    If you'd rather not, just change the below entries to strings with
    the config you want - ie #define EXAMPLE_WIFI_SSID "mywifissid"
 */
-#define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
-#define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
-#define EXAMPLE_ESP_MAXIMUM_RETRY  CONFIG_ESP_MAXIMUM_RETRY
+#define EXAMPLE_ESP_WIFI_SSID      "MojaTV_Full_572599"
+#define EXAMPLE_ESP_WIFI_PASS      "111111111111"
+#define EXAMPLE_ESP_MAXIMUM_RETRY  5
 
 #if CONFIG_ESP_STATION_EXAMPLE_WPA3_SAE_PWE_HUNT_AND_PECK
 #define ESP_WIFI_SAE_MODE WPA3_SAE_PWE_HUNT_AND_PECK
@@ -168,6 +176,8 @@ void app_main(void)
     }
     ESP_ERROR_CHECK(ret);
 
+
+    // Budo here is something what possibly in future I can need
     if (CONFIG_LOG_MAXIMUM_LEVEL > CONFIG_LOG_DEFAULT_LEVEL) {
         /* If you only want to open more logs in the wifi module, you need to make the max level greater than the default level,
          * and call esp_log_level_set() before esp_wifi_init() to improve the log level of the wifi module. */

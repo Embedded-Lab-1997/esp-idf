@@ -41,8 +41,8 @@
 #include <xtensa/hal.h>
 #include <xtensa/xtensa-versions.h>
 #else
-#include "../hal.h"
-#include "../xtensa-versions.h"
+#include "./components/xtensa/include/xtensa/hal.h"
+#include "./components/xtensa/include/xtensa/xtensa-versions.h"
 #endif
 
 /*  CONFIGURATION SPECIFIC DEFINITIONS:  */

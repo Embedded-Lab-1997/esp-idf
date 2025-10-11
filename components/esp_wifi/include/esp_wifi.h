@@ -294,6 +294,13 @@ extern wifi_osi_funcs_t g_wifi_osi_funcs;
 #define CONFIG_FEATURE_WIFI_ENT_BIT (1<<7)
 #define CONFIG_FEATURE_BSS_MAX_IDLE_BIT (1<<8)
 
+//Budo configuration
+#define CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM 16
+#define CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM 64
+#define CONFIG_ESP_WIFI_TX_BUFFER_TYPE 1
+#define CONFIG_ESP_WIFI_DYNAMIC_RX_MGMT_BUF 0
+#define CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM 7
+
 /* Set additional WiFi features and capabilities */
 #define WIFI_FEATURE_CAPS (WIFI_ENABLE_WPA3_SAE | \
                            WIFI_ENABLE_CACHE_TX_BUFFER  | \

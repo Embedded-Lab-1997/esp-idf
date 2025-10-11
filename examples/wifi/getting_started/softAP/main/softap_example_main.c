@@ -15,8 +15,9 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 
-#include "lwip/err.h"
+
 #include "lwip/sys.h"
+#include "lwip/err.h"
 
 /* The examples use WiFi configuration that you can set via project configuration menu.
 

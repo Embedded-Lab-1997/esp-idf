@@ -27,6 +27,10 @@ typedef enum {
     ESP_LOG_MAX     = 6,    /*!< Number of levels supported */
 } esp_log_level_t;
 
+// Budo: this two lines down I made
+#define CONFIG_LOG_MAXIMUM_LEVEL 60
+#define CONFIG_LOG_DEFAULT_LEVEL 30
+
 #define ESP_LOG_LEVEL_LEN   (3) /*!< Number of bits used to represent the log level */
 #define ESP_LOG_LEVEL_MASK  ((1 << ESP_LOG_LEVEL_LEN) - 1) /*!< Mask for log level */
 /// Returns level from config

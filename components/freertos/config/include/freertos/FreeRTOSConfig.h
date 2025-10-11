@@ -95,7 +95,7 @@
 #define configUSE_16_BIT_TICKS                       0
 #define configIDLE_SHOULD_YIELD                      0
 #define configKERNEL_INTERRUPT_PRIORITY              1      /*Todo: This currently isn't used anywhere */
-#define configNUMBER_OF_CORES                        CONFIG_FREERTOS_NUMBER_OF_CORES
+#define configNUMBER_OF_CORES                        1//Budo outcomment CONFIG_FREERTOS_NUMBER_OF_CORES
 /* For compatibility */
 #define configNUM_CORES                              configNUMBER_OF_CORES
 
@@ -107,11 +107,11 @@
 #define configUSE_QUEUE_SETS                     1
 #define configQUEUE_REGISTRY_SIZE                CONFIG_FREERTOS_QUEUE_REGISTRY_SIZE
 #define configUSE_TASK_NOTIFICATIONS             1
-#define configTASK_NOTIFICATION_ARRAY_ENTRIES    CONFIG_FREERTOS_TASK_NOTIFICATION_ARRAY_ENTRIES
+#define configTASK_NOTIFICATION_ARRAY_ENTRIES    1// Budo outcomment CONFIG_FREERTOS_TASK_NOTIFICATION_ARRAY_ENTRIES
 
 /* ----------------------- System -------------------------- */
 
-#define configMAX_TASK_NAME_LEN    CONFIG_FREERTOS_MAX_TASK_NAME_LEN
+#define configMAX_TASK_NAME_LEN    1// Budo outcomment CONFIG_FREERTOS_MAX_TASK_NAME_LEN
 
 /* If deletion callbacks are enabled, the number of TLSP's are doubled (i.e.,
  * the length of the TCB's pvThreadLocalStoragePointersThis array). This allows
