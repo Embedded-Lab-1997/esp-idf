@@ -9,7 +9,7 @@
 #include "sdkconfig.h"
 #include <stdint.h>
 #include "spinlock.h"
-#include "xtensa/xtruntime.h"
+#include "./components/xtensa/include/xtensa/xtruntime.h"
 #include "xtensa/config/core.h"
 #include "xtensa/config/core-isa.h"
 #include "xtensa/config/xt_specreg.h"
