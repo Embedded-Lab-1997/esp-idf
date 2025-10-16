@@ -22,6 +22,7 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 #include "./components/esp_common/include/esp_bit_defs.h"
+#include "esp_netif_types.h"
 
 
 #include "lwip/err.h"
@@ -36,6 +37,8 @@
 #define EXAMPLE_ESP_WIFI_PASS      "111111111111"
 #define EXAMPLE_ESP_MAXIMUM_RETRY  5
 
+//Budo added, I choosed the first option, here is to configurate
+#define CONFIG_ESP_STATION_EXAMPLE_WPA3_SAE_PWE_HUNT_AND_PECK 1
 #if CONFIG_ESP_STATION_EXAMPLE_WPA3_SAE_PWE_HUNT_AND_PECK
 #define ESP_WIFI_SAE_MODE WPA3_SAE_PWE_HUNT_AND_PECK
 #define EXAMPLE_H2E_IDENTIFIER ""
@@ -46,6 +49,8 @@
 #define ESP_WIFI_SAE_MODE WPA3_SAE_PWE_BOTH
 #define EXAMPLE_H2E_IDENTIFIER CONFIG_ESP_WIFI_PW_ID
 #endif
+// Budo added
+#define CONFIG_ESP_WIFI_AUTH_OPEN 1
 #if CONFIG_ESP_WIFI_AUTH_OPEN
 #define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_OPEN
 #elif CONFIG_ESP_WIFI_AUTH_WEP

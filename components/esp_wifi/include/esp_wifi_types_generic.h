@@ -84,8 +84,8 @@ typedef struct {
   * Enterprise Networks : WIFI_AUTH_WPA_ENTERPRISE < WIFI_AUTH_WPA2_ENTERPRISE < WIFI_AUTH_WPA3_ENTERPRISE = WIFI_AUTH_WPA2_WPA3_ENTERPRISE < WIFI_AUTH_WPA3_ENT_192
   */
 typedef enum {
-    WIFI_AUTH_OPEN = 0,         /**< Authenticate mode : open */
-    WIFI_AUTH_WEP,              /**< Authenticate mode : WEP */
+    WIFI_AUTH_OPEN = 0, // ,         /**< Authenticate mode : open */
+    WIFI_AUTH_WEP ,              /**< Authenticate mode : WEP */
     WIFI_AUTH_WPA_PSK,          /**< Authenticate mode : WPA_PSK */
     WIFI_AUTH_WPA2_PSK,         /**< Authenticate mode : WPA2_PSK */
     WIFI_AUTH_WPA_WPA2_PSK,     /**< Authenticate mode : WPA_WPA2_PSK */
