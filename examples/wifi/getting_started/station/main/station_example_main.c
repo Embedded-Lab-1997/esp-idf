@@ -15,7 +15,7 @@
 //#include "./examples/build_system/cmake/idf_as_lib/stubs/freertos/freertos/FreeRTOS.h" //this is empty
 
 #include "freertos/task.h"
-#include "freertos/event_groups.h"
+#include "./components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h"
 #include "esp_system.h"
 #include "esp_wifi.h"
 #include "esp_event.h"
