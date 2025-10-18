@@ -57,6 +57,9 @@
 #ifdef __cplusplus
     extern "C" {
 #endif
+
+// Budo added
+#include "./components/xtensa/include/xtensa/hal.h"
 /* *INDENT-ON* */
 
 /* Application specific configuration options. */

@@ -10,7 +10,9 @@
 // Budo added
 
 //#include "freertos/FreeRTOS.h" //this was before and it is empty
+
 #include "./components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h"
+#include "freertos/FreeRTOS.h"
 //#include "./components/freertos/FreeRTOS-Kernel-SMP/include/freertos/FreeRTOS.h"
 //#include "./examples/build_system/cmake/idf_as_lib/stubs/freertos/freertos/FreeRTOS.h" //this is empty
 
