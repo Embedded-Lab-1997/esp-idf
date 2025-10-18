@@ -49,7 +49,7 @@
 #define __ESP_WIFI_H__
 
 // Budo added line
-#include "./components/xtensa/include/xtensa/hal.h"
+//#include "./components/xtensa/include/xtensa/hal.h"
 #include <stdint.h>
 #include <stdbool.h>
 #include "esp_err.h"
