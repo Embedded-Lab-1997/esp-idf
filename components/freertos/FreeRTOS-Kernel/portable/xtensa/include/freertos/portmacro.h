@@ -42,7 +42,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <stdarg.h>
-#include <xtensa/config/core.h>
+#include "./components/xtensa/esp32s3/include/xtensa/config/core.h"
 // Budo changed, here was <xtensa/hal.h>
 #include "./components/xtensa/include/xtensa/hal.h"           /* required for xthal_get_ccount. [refactor-todo] use cpu_hal instead */
 #include <xtensa/xtruntime.h>       /* required for XTOS_SET_INTLEVEL. [refactor-todo] add common intr functions to esp_hw_support */
