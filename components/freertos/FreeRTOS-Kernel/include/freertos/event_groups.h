@@ -29,7 +29,9 @@
  * https://github.com/FreeRTOS
  *
  */
-
+// Budo added
+#include "./components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h"
+#include "./components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h"
 #ifndef EVENT_GROUPS_H
 #define EVENT_GROUPS_H
 
