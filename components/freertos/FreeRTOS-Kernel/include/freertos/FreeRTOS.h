@@ -60,13 +60,13 @@
 /* *INDENT-ON* */
 
 /* Application specific configuration options. */
-#include "FreeRTOSConfig.h"
+#include "./components/freertos/config/include/freertos/FreeRTOSConfig.h"
 
 /* Basic FreeRTOS definitions. */
-#include "projdefs.h"
+#include "./components/freertos/FreeRTOS-Kernel/include/freertos/projdefs.h"
 
 /* Definitions specific to the port being used. */
-#include "portable.h"
+#include "./components/freertos/FreeRTOS-Kernel/include/freertos/portable.h"
 
 /* Must be defaulted before configUSE_NEWLIB_REENTRANT is used below. */
 #ifndef configUSE_NEWLIB_REENTRANT
