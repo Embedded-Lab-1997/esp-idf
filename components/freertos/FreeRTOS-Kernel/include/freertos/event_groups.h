@@ -35,6 +35,9 @@
 #ifndef EVENT_GROUPS_H
 #define EVENT_GROUPS_H
 
+#define INC_FREERTOS_H 1 //Budo added
+
+
 #ifndef INC_FREERTOS_H
     #error "include FreeRTOS.h" must appear in source files before "include event_groups.h"
 #endif

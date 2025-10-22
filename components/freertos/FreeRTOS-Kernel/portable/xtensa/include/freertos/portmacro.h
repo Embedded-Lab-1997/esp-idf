@@ -45,8 +45,8 @@
 #include "./components/xtensa/esp32s3/include/xtensa/config/core.h"
 // Budo changed, here was <xtensa/hal.h>
 #include "./components/xtensa/include/xtensa/hal.h"           /* required for xthal_get_ccount. [refactor-todo] use cpu_hal instead */
-#include <xtensa/xtruntime.h>       /* required for XTOS_SET_INTLEVEL. [refactor-todo] add common intr functions to esp_hw_support */
-#include "xt_instr_macros.h"
+#include "./components/xtensa/include/xtensa/xtruntime.h"    /* required for XTOS_SET_INTLEVEL. [refactor-todo] add common intr functions to esp_hw_support */
+#include "./components/xtensa/include/xt_instr_macros.h"
 #include "spinlock.h"
 #include "esp_private/crosscore_int.h"
 #include "esp_macros.h"
