@@ -145,6 +145,8 @@ typedef TickType_t               EventBits_t;
  * @endcode
  * \ingroup EventGroup
  */
+// Budo added
+#define configSUPPORT_DYNAMIC_ALLOCATION 1
 #if ( configSUPPORT_DYNAMIC_ALLOCATION == 1 )
     EventGroupHandle_t xEventGroupCreate( void ) PRIVILEGED_FUNCTION;
 #endif
