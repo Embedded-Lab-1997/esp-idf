@@ -100,7 +100,7 @@
 #endif
 /* *INDENT-ON* */
 
-#include "mpu_wrappers.h"
+#include "./components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h"
 
 /*
  * Setup the stack of a new task so it is ready to be placed under the

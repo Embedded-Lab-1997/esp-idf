@@ -30,8 +30,13 @@
  *
  */
 // Budo added
-#include "./components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h"
-#include "./components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h"
+//#include "./components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h"
+// Budo added
+//#include "./components/freertos/FreeRTOS-Kernel/include/freertos/portable.h"
+//#include "./components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h"
+
+//Budo added
+//#include "./components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h"
 #ifndef EVENT_GROUPS_H
 #define EVENT_GROUPS_H
 
